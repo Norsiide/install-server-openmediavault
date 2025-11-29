@@ -27,19 +27,19 @@ apt update && apt upgrade
 ```
 apt install sudo && apt install curl && apt install nano && apt install git
 ``` 
-(2) Nous allons maintenant procéder à l’installation de CasaOS.
+(2) Nous allons maintenant procéder à l’installation de openmediavault.
  
 ```
-curl -fsSL https://get.casaos.io | sudo bash
+sudo wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
 ```
-MMaintenant, vous pouvez accéder à CasaOS en utilisant l'URL qui vous a été fournie lors de l'installation. Par exemple : 25.155.215.25.
+MMaintenant, vous pouvez accéder à OpenMediavault en utilisant l'URL qui vous a été fournie lors de l'installation. Par exemple : 25.155.215.25.
 
 <p align="center"><img src="https://github.com/Norsiide/install-openmediavault/blob/main/img/update-cli.png"  alt="update cli"></p>
 
-## Dans cette étape, nous allons changer le port de CasaOS.
-* Accédez au menu des paramètres depuis le web GUI de CasaOS, puis modifiez le port en (9090) à la place du port (80).
-Ce changement est nécessaire car nous allons utiliser un conteneur avec Nginx Proxy Manager, qui nécessite les ports 80 et 443. Par conséquent, nous devons modifier le port par défaut de CasaOS.
-<p align="center"><img src="https://github.com/Norsiide/install-openmediavault/blob/main/img/port-casaos.png"  alt="port casaos"></p>
+## Dans cette étape, nous allons changer le port de OpenMediaVault.
+* Accédez au menu des paramètres depuis le web GUI de OpenMediaVault, puis modifiez le port en (9090) à la place du port (80).
+Ce changement est nécessaire car nous allons utiliser un conteneur avec Nginx Proxy Manager, qui nécessite les ports 80 et 443. Par conséquent, nous devons modifier le port par défaut de OpenMediaVault.
+<p align="center"><img src="https://github.com/Norsiide/install-openmediavault/blob/main/img/omv-port.png"  alt="port omv"></p>
 
 ## Nous allons maintenant procéder à l’installation du script de connexion SSH.
 
@@ -48,24 +48,6 @@ Ce changement est nécessaire car nous allons utiliser un conteneur avec Nginx P
 ## Pour installer Neofetch, un script permettant d'afficher les informations système dans le terminal, suivez les étapes ci-dessous :
 
 * Repos [Liens](https://github.com/Norsiide/install-openmediavault/tree/main/neofetch)
-
-## Dans cette section, nous allons résoudre les problèmes courants rencontrés avec Nextcloud.
-- commande de l'occ nextcloud ( docker exec --user www-data -it nom-du-contaire php occ command )
-
-Pour résoudre les problèmes liés au mode de maintenance et effectuer la réparation :
-```
-docker exec --user www-data -it nextcloud php occ maintenance:repair --include-expensive
-```
-Si vous rencontrez des problèmes avec la base de données, voici les étapes à suivre pour les résoudre.
-```
-docker exec --user www-data -it nextcloud php occ db:add-missing-columns
-```
-```
-docker exec --user www-data -it nextcloud php occ db:add-missing-indices
-```
-```
-docker exec --user www-data -it nextcloud php occ db:add-missing-primary-keys
-```
 
 ## Si vous n'avez pas besoin de l'IPv6, vous pouvez le désactiver. Cela n'est pas obligatoire, mais peut être utile selon vos besoins.
 
