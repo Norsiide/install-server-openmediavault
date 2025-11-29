@@ -1,15 +1,20 @@
 <p align="center"><img src="https://wiki.debian.org/FrontPage?action=AttachFile&do=get&target=11-bullseye-wiki-banner-04.png" width="400" alt="norsiide"></p>
 
-# Installation d’un serveur dédié ou VPS sous CasaOS 
+# Installation d’un serveur dédié ou VPS sous OpenMediaVault 
 
-* **CasaOS** est un système de type NAS (Network Attached Storage) open source, basé sur Debian, conçu pour être simple à utiliser et accessible à tous. [Lien ver CasaOS](https://casaos.zimaspace.com/)
-<p align="center"><img src="https://github.com/Norsiide/install-openmediavault/blob/main/img/casaos.png" alt="norsiide"></p>
+* **OpenMediaVault** est un système de type NAS (Network Attached Storage) open source, basé sur Debian, conçu pour être simple à utiliser et accessible à tous.
+
+<p align="center"><img src="https://github.com/Norsiide/install-openmediavault/blob/main/img/openmediavault.png" alt="norsiide"></p>
 
 * **PS:** Je tiens à rappeler que cette configuration est basée sur mon propre serveur, que je rends public afin de vous aider dans l’installation. Il se peut donc que certaines informations manquent.
 Dans ce cas, n’hésitez pas à me contacter, et je les ajouterai pour faciliter l’installation des prochains utilisateurs.
-* **Contact**
-    - Discord [Rejoin notre communauté](https://discord.gg/EV3fAhFZJT)
 
+### Lien utiles
+
+* **Discord** : [Rejoins notre communauté](https://discord.gg/EV3fAhFZJT)
+* **Website** : [Plus d'information](https://norsiide.be)
+
+* **OpenMediaVault** : [Lien ver OpenMediaVault](https://www.openmediavault.org/)
 
 ## Mise à jour et installation des paquets via SSH en ligne de commande (CLI).
 
