@@ -70,4 +70,4 @@ Une fois terminé :
 
 - va dans: Services -> Compose -> Files
 
-- clique sur le + est tu peut aussi choisir / add from exemples #Il te propose des config clé en main ou utilise le ficher dans ce tuto
+- clique sur le + est tu peut aussi choisir / add from exemples # Il te propose des config clé en main ou utilise le ficher dans ce tuto
