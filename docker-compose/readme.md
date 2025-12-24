@@ -11,13 +11,15 @@ Grâce à ce fichier, on dispose d’une vue claire et structurée de la configu
 
 ---
 
-### idée des lien des volumes 
+### configuration des volumes 
 
 * **condifuration des applications** : 
     - /mnt/docker-compose/backup # Ou les sauvegarde que docker peut effectué
     - /mnt/docker-compose/config # Ou les configuration du container
     - /mnt/docker-compose/data # ou le serveur va stocker les donnée d'applications
-* **raid 1( MIRROIR )** : Celui ci est celui ou toute les donnée son stocker (Films, download, livre, ect)
+* **raid 1( MIRROIR )** : 
+    - /srv/dev-disk-by-uuid-id_du_disque/downloads #exemple
+Celui ci est celui ou toute les donnée son stocker (Films, download, livre, ect)
 
 ---
 
@@ -47,9 +49,16 @@ Une fois terminé :
 * reconnecte-toi à l’interface web OMV
 * rafraîchis la page si nécessaire
 
+## 🔹 Étape 2 – Installer docker
+<p align="center"><img src="https://github.com/Norsiide/install-openmediavault/blob/main/img/install-docker.png" alt="openmediavault"></p>
+
+* coche la case (Docker repo)
+
+* puis -> enable backports
+
 ---
 
-## 🔹 Étape 2 – Installer Docker via l’interface OMV
+## 🔹 Étape 3 – Installer Docker via l’interface OMV
 
 1. Va dans **System → Plugins**
 2. Installe le plugin :
