@@ -77,6 +77,14 @@ Neofetch permet d’afficher les informations système dans le terminal, de mani
 * Dépôt GitHub : [Lien](https://github.com/Norsiide/install-openmediavault/tree/main/neofetch)
 
 ---
+## Installation de docker compose
+
+Docker est une plateforme qui permet d’exécuter des applications dans des conteneurs.
+Un conteneur regroupe une application et tout ce dont elle a besoin pour fonctionner (bibliothèques, dépendances, configuration), sans dépendre du système hôte.
+
+* Dépôt GitHub : [Lien](https://github.com/Norsiide/install-openmediavault/tree/main/docker-compose)
+
+---
 
 ## Désactiver l’IPv6 (optionnel)
 
