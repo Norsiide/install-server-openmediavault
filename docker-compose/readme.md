@@ -66,5 +66,8 @@ Une fois terminé :
    ```
    openmediavault-compose
    ```
+## 🔹 Étape 4 – création des services
 
-   *(ou Docker si ce n’est pas encore fait)*
+- va dans: Services -> Compose -> Files
+
+- clique sur le + est tu peut aussi choisir / add from exemples #Il te propose des config clé en main ou utilise le ficher dans ce tuto
