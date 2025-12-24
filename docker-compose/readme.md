@@ -1,10 +1,13 @@
-<p align="center"><img src="https://wiki.debian.org/FrontPage?action=AttachFile&do=get&target=11-bullseye-wiki-banner-04.png" width="auto" alt="norsiide"></p>
+<p align="center"><img src="https://github.com/Norsiide/install-openmediavault/blob/main/img/docker.png" width="auto" alt="norsiide"></p>
 
-# Installation d’un serveur dédié ou VPS sous OpenMediaVault
+# installation de docker + docker compose
 
-* **OpenMediaVault** est un système de type NAS (Network Attached Storage) open source, basé sur Debian, conçu pour être simple d’utilisation et accessible à tous.
+* **Docker compose** est une application complémentaire à Docker.
+Son principal avantage est qu’au lieu d’utiliser de longues commandes pour gérer les conteneurs, il permet de centraliser toute la configuration dans un fichier unique (docker-compose.yml).
 
-<p align="center"><img src="https://github.com/Norsiide/install-openmediavault/blob/main/img/openmediavault.png" alt="openmediavault"></p>
+Grâce à ce fichier, on dispose d’une vue claire et structurée de la configuration des conteneurs (images, volumes, ports, variables, redémarrage, etc.), ce qui rend la gestion plus simple, plus lisible et plus flexible qu’avec des commandes Docker classiques.
+
+<p align="center"><img src="https://github.com/Norsiide/install-openmediavault/blob/main/img/dokcer-compose.png" alt="openmediavault"></p>
 
 > **PS :** Cette configuration est basée sur mon propre serveur, que je partage publiquement afin de vous aider dans l’installation. Certaines informations peuvent manquer ; n’hésitez pas à me contacter pour que je les ajoute et facilite ainsi l’installation pour les prochains utilisateurs.
 
