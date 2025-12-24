@@ -64,12 +64,6 @@ Ce changement est nécessaire, car nous allons utiliser un conteneur **Nginx Pro
 
 ---
 
-## Installation du script de backup
-
-* Dépôt GitHub : [Lien](https://github.com/Norsiide/install-openmediavault/tree/main/backup)
-
----
-
 ## Installation de Neofetch
 
 Neofetch permet d’afficher les informations système dans le terminal, de manière claire et esthétique.

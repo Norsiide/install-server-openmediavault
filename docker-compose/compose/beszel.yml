@@ -1,0 +1,9 @@
+services:
+  beszel:
+    image: henrygd/beszel
+    container_name: beszel
+    ports:
+      - 8090:8090
+    volumes:
+      - /mnt/docker-compose/data/beszel:/beszel_data
+    restart: unless-stopped
