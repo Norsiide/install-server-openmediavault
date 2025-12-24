@@ -7,7 +7,7 @@ Son principal avantage est qu’au lieu d’utiliser de longues commandes pour g
 
 Grâce à ce fichier, on dispose d’une vue claire et structurée de la configuration des conteneurs (images, volumes, ports, variables, redémarrage, etc.), ce qui rend la gestion plus simple, plus lisible et plus flexible qu’avec des commandes Docker classiques.
 
-<p align="center"><img src="https://github.com/Norsiide/install-openmediavault/blob/main/img/dokcer-compose.png" alt="openmediavault"></p>
+<p align="center"><img src="https://github.com/Norsiide/install-openmediavault/blob/main/img/docker-compose.png" alt="openmediavault"></p>
 
 > **PS :** Cette configuration est basée sur mon propre serveur, que je partage publiquement afin de vous aider dans l’installation. Certaines informations peuvent manquer ; n’hésitez pas à me contacter pour que je les ajoute et facilite ainsi l’installation pour les prochains utilisateurs.
 
