@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  dynhost-ovh:
+    image: sylvanld/update-ovh-dynhost
+    container_name: dynhost-ovh
+    environment:
+      HOSTNAME: "<host>.<domain>"
+      IDENTIFIER: "<domain>-<suffix>"
+      PASSWORD: "<password>"
+      LOG_LEVEL: "debug"
+    restart: unless-stopped

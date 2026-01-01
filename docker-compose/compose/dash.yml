@@ -1,0 +1,23 @@
+services:
+  lab-dash:
+      container_name: lab-dash
+      image: ghcr.io/anthonygress/lab-dash:latest
+      network_mode: host
+      privileged: true
+      #network_mode: host # for monitoring network usage stats. run `sudo ufw allow 2022/tcp` on ubuntu to allow access through firewall
+      ports:
+        - 2022:2022
+      environment:
+        - SECRET=your_secret_key_here
+        # You can run `openssl rand -base64 32` to generate a key
+      volumes:
+        - /sys:/sys:ro
+        - /proc/net:/host_proc_net:ro
+        - /dossier-du-raid:/raid # pour afficher l'utilisation du disque
+        - /dossier-du-backup:/backup # pour afficher l'utilisation du disque
+        - /mnt/docker-compose/data/lab-dash/config:/config
+        - /mnt/docker-compose/data/lab-dash/uploads:/app/public/uploads
+        - /var/run/docker.sock:/var/run/docker.sock
+      restart: unless-stopped
+      labels:
+        - "com.centurylinklabs.watchtower.enable=true"
